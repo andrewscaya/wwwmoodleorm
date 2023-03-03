@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
 <?php if (isset($view['headjs'])): ?>
     <?=$this->section('headjs', $this->fetch('headjs', ['view' => $view]))?>
@@ -7,72 +10,120 @@
     <?=$this->section('head', $this->fetch('head', ['view' => $view]))?>
 <?php endif ?>
 
-<body>
+<body id="body">
 <?=$this->section('navbar', $this->fetch('navbar', ['view' => $view]))?>
 
-<main role="main">
-    <div class="container">
-        <div class="row text-left flex flex-wrap">
-            <div class="col-md-8">
-                <h1 class="p-2 text-center">Welcome to<br /><?=$view['appname'] ?>!</h1>
-                <p class="p-2 text-center text-md md:text-lg text-grey-dark leading-normal">
-                    You can view a list of all products!
-                </p>
-                <p class="mb-5 text-center"><a href="<?=$view['urlbaseaddr'] ?>products/index" class="btn btn-light mt-6 inline-block bg-white text-black no-underline px-4 py-3 shadow-lg">View products</a></p>
-            </div>
-            <div class="col-md-4 items-center">
-                <p><img src="<?=$view['urlbaseaddr'] ?>img/lightmvc_logo.png" class="center-block shadow-lg" /><br /></p>
-            </div>
-        </div>
-    </div>
+<main class="site-content" role="main">
 
-    <!-- feature -->
-    <div class="bg-yellow text-black">
+    <!-- hero area -->
+    <section class="hero-area bg-primary">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="p-5 text-center text-grey-darkest">
-                        <div class="mb-5 h3 font-weight-bold">
-                            Easily create PHP applications by using any PHP library within this very modular, event-driven and Swoole-enabled framework!
+                <div class="col-lg-11 mx-auto">
+                    <h1 class="text-white font-tertiary">A simple ORM<br />for Moodle plugins</h1>
+                </div>
+            </div>
+        </div>
+        <div class="layer-bg w-100">
+            <img class="img-fluid w-100" src="<?=$view['urlbaseaddr'] ?>images/illustrations/leaf-bg.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l2">
+            <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/dots-cyan.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l4">
+            <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/dots-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l5">
+            <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/leaf-yellow.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l7">
+            <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/dots-group-orange.png" alt="bg-shape">
+        </div>
+        <div class="layer" id="l9">
+            <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/leaf-cyan-2.png" alt="bg-shape">
+        </div>
+    </section>
+    <!-- /hero area -->
+
+    <!-- about -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 mx-auto text-center">
+                    <p class="font-secondary paragraph-lg text-dark">
+                        A simple ORM, with a Unit of Work, to easily save cascading data from Moodle Forms,
+                        using Moodle Entities, via single database transactions.
+                    </p>
+                    <a class="btn btn-transparent" target="_blank" href="https://moodleorm.readthedocs.io/en/latest/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /about -->
+
+    <!-- features -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-title">Main feature development</h2>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                    <div class="card shadow text-center">
+                        <div class="position-relative rounded-top progress-wrapper" data-color="#fdb157">
+                            <div class="wave" data-progress="100%"></div>
                         </div>
-                        <p class="lg:text-xl"><a href="https://lightmvcframework.net/" target="_blank">https://lightmvcframework.net/</a></p>
+                        <div class="card-footer bg-white">
+                            <h4 class="card-title">Unit of Work support (100%)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                    <div class="card shadow text-center">
+                        <div class="position-relative rounded-top progress-wrapper" data-color="#9473e6">
+                            <div class="wave" data-progress="100%"></div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <h4 class="card-title">Multiple vertical child tables 1-1 (100%)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                    <div class="card shadow text-center">
+                        <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
+                            <div class="wave" data-progress="90%"></div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <h4 class="card-title">Cascade delete (90%)</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+                    <div class="card shadow text-center">
+                        <div class="position-relative rounded-top progress-wrapper" data-color="#ffbcaa">
+                            <div class="wave" data-progress="10%"></div>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <h4 class="card-title">Multiple horizontal child tables 1-N (Upcoming)</h4>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /feature -->
+    </section>
+    <!-- /features -->
 
-    <!-- content -->
-    <div class="bg-white">
+    <!-- client logo slider -->
+    <section class="section pb-0">
         <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-4">
-                    <div class="row justify-content-center">
-                        <a href="https://getlaminas.org/" target="_blank"><img class="center-block mt-5 p-2" src="<?=$view['urlbaseaddr'] ?>img/laminas-logo.svg" /></a>
-                    </div>
-                    <div class="row justify-content-center">
-                        <a href="https://symfony.com/" target="_blank"><img class="center-block mt-5 p-2" src="<?=$view['urlbaseaddr'] ?>img/symfony.png" /></a>
-                    </div>
-                    <div class="row justify-content-center">
-                        <a href="https://www.swoole.co.uk/" target="_blank"><img class="center-block mt-5 p-2" src="<?=$view['urlbaseaddr'] ?>img/swoole.png" /></a>
-                    </div>
-                </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5">
-                    <h3 class="mt-5 mb-8">
-                        Build applications using PSR-15 compliant middleware and PSR-7 compliant HTTP messages.
-                    </h3>
-                    <p class="mb-8">Built upon proven technologies like Laminas Diactoros, Laminas Stratigility, and Laminas EventManager!</p>
-                    <p class="mb-8">Many great technologies, like Pimple, FastRoute, Plates, and Whoops come together to become the LightMVC Framework!</p>
-                    <p class="mb-8">And, let's not forget these great-looking templates created with Bootstrap and Tailwind CSS!</p>
-                    <p class="text-center"><a href="<?=$view['urlbaseaddr'] ?>products/index" class="btn btn-dark inline-block bg-black text-white mb-5 px-4 py-3 no-underline shadow-lg">Browse our products</a></p>
-                </div>
-                <div class="col-md-1"></div>
+            <div class="client-logo-slider d-flex align-items-center">
+                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                                                                                      src="<?=$view['urlbaseaddr'] ?>images/clients-logo/client-logo-1.png" alt="client-logo"></a>
             </div>
         </div>
-    </div>
+    </section>
+    <!-- /client logo slider -->
+
 </main> <!-- /content -->
 
 <div class="container-footer">

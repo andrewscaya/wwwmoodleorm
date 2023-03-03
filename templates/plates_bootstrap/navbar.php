@@ -1,23 +1,31 @@
-<header>
-    <nav class="navbar navbar-expand-md navbar-default fixed-top shadow-lg">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="<?=$view['links']['Home'] ?>"><img src="<?=$view['logo'] ?>" alt="Logo" style="max-width: 42px"><b><?=$view['title'] ?></b></a>
+<!--
+Fixed Navigation
+==================================== -->
+<header class="navigation fixed-top nav-bg">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <!-- logo -->
+        <div class="display-4 font-weight-bold">
+            <a class="navbar-title" href="<?=$view['urlbaseaddr'] ?>">MoodleORM</a>
         </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- /logo -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+                aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto">
-                <?php foreach($view['links'] as $key => $value): ?>
-                    <li class="nav-item"><?php echo '<a class="nav-link" href="' . $value . '">' . $key . '</a>' ?></li>
-                <?php endforeach; ?>
+
+        <!-- main nav -->
+        <nav class="collapse navbar-collapse text-center" role="navigation">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="<?=$view['urlbaseaddr'] ?>">Home</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/releases">Download</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://moodleorm.readthedocs.io/en/latest/">Documentation</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/issues/">Support</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm">Source Code</a></li>
             </ul>
-        </div>
+        </nav>
+        <!-- /main nav -->
     </nav>
 </header>
+<!--
+End Fixed Navigation
+==================================== -->

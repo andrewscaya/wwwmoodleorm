@@ -10,9 +10,9 @@ class C405Controller extends Controller
     {
         $this->view['vars'] = $vars;
 
-        $this->view['headjs'] = 1;
+        //$this->view['headjs'] = 1;
         
-        $this->view['bodyjs'] = 1;
+        //$this->view['bodyjs'] = 1;
         
         $this->view['templatefile'] = 'c405_index';
 

@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html lang="en" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
 
 <?php if (isset($view['headjs'])): ?>
     <?=$this->section('headjs', $this->fetch('headjs', ['view' => $view]))?>
@@ -7,14 +10,14 @@
     <?=$this->section('head', $this->fetch('head', ['view' => $view]))?>
 <?php endif ?>
 
-<body>
+<body id="body">
 <?=$this->section('navbar', $this->fetch('navbar', ['view' => $view]))?>
 
-<main role="main">
-    <div class="container">
-        <div id="pageBody">
-            <div class="row justify-content-center">
-                <div class="col-auto">
+<main class="site-content" role="main">
+    <section class="section">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col-lg-10 mx-auto text-center">
                     <h1 class="h1 xl:text-blue-darker">405</h1>
                     <h2 class="h2 text-blue-darker">Method Not Allowed</h2>
                     <p class="pt-2 font-bold text-blue">Sorry, but this method is not allowed on this page!</p>
@@ -22,34 +25,11 @@
                     <?php foreach($view['vars'] as $key => $value): ?>
                         <div class="row justify-content-center"><?=$value ?></div>
                     <?php endforeach; ?>
-                    <p class="pt-5 pb-10 text-lg-center">Let's go back <a href="<?=$view['urlbaseaddr'] ?>index">HOME</a>!</p>
+                    <p class="pt-5 pb-10 text-lg-center">Let's go back <a href="<?=$view['urlbaseaddr'] ?>">HOME</a>!</p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <!-- feature -->
-    <div class="bg-yellow text-black">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12"><p><br /></p></div>
-            </div>
-        </div>
-    </div>
-    <!-- /feature -->
-
-    <!-- content -->
-    <div class="bg-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-1"></div>
-                <div class="col-md-4"></div>
-                <div class="col-md-1"></div>
-                <div class="col-md-5"></div>
-                <div class="col-md-1"></div>
-            </div>
-        </div>
-    </div>
+    </section>
 </main> <!-- /content -->
 
 <div class="container-footer">
