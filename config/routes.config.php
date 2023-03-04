@@ -6,9 +6,9 @@ $baseConfig['routes'] = [
         '/',
         'index',
     ],
-    /*[
+    [
         'GET',
         '/index[/{action}]',
         'index',
-    ],*/
+    ],
 ];
