@@ -33,15 +33,15 @@
         <div class="layer" id="l4">
             <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/dots-orange.png" alt="bg-shape">
         </div>
-        <div class="layer" id="l5">
+        <!-- <div class="layer" id="l5">
             <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/leaf-yellow.png" alt="bg-shape">
-        </div>
+        </div> -->
         <div class="layer" id="l7">
             <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/dots-group-orange.png" alt="bg-shape">
         </div>
-        <div class="layer" id="l9">
+        <!-- <div class="layer" id="l9">
             <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/leaf-cyan-2.png" alt="bg-shape">
-        </div>
+        </div> -->
     </section>
     <!-- /hero area -->
 
