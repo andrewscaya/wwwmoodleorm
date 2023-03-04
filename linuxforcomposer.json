@@ -11,7 +11,7 @@
                     "cd /srv",
                     "mkdir tempo",
                     "cd tempo",
-                    "if [[ -d wwwmoodleorm ]]; then cd wwwmoodleorm && git pull origin master; else git clone https://github.com/linuxforphp/wwwmoodleorm && cd wwwmoodleorm; fi",
+                    "if [[ -d wwwmoodleorm ]]; then cd wwwmoodleorm && git pull origin master; else git clone https://github.com/andrewscaya/wwwmoodleorm && cd wwwmoodleorm; fi",
                     "composer install",
                     "chmod -R 777 cache/ logs/ templates_c/",
                     "export BACKEND_PASS=\"$( head /dev/urandom | tr -dc A-Za-z0-9 | head -c 34 ; echo '' )\"",
