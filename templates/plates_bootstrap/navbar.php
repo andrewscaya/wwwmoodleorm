@@ -16,11 +16,10 @@ Fixed Navigation
         <!-- main nav -->
         <nav class="collapse navbar-collapse text-center" role="navigation" id="navigation">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="<?=$view['urlbaseaddr'] ?>">Home</a></li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/releases">Download</a></li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://moodleorm.readthedocs.io/en/latest/">Documentation</a></li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/issues/">Support</a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm">Source Code</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm">GitHub</a></li>
             </ul>
         </nav>
         <!-- /main nav -->
