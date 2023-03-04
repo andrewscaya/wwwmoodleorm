@@ -91,10 +91,10 @@
                 <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
                     <div class="card shadow text-center">
                         <div class="position-relative rounded-top progress-wrapper" data-color="#bdecf6">
-                            <div class="wave" data-progress="90%"></div>
+                            <div class="wave" data-progress="100%"></div>
                         </div>
                         <div class="card-footer bg-white">
-                            <h4 class="card-title">Cascade delete (90%)</h4>
+                            <h4 class="card-title">Cascading CRUD (100%)</h4>
                         </div>
                     </div>
                 </div>
