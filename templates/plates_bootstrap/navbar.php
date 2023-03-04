@@ -4,7 +4,7 @@ Fixed Navigation
 <header class="navigation fixed-top nav-bg">
     <nav class="navbar navbar-expand-lg navbar-dark">
         <!-- logo -->
-        <div class="display-4 font-weight-bold">
+        <div class="h3 font-weight-bold">
             <a class="navbar-title" href="<?=$view['urlbaseaddr'] ?>">MoodleORM</a>
         </div>
         <!-- /logo -->
@@ -14,7 +14,7 @@ Fixed Navigation
         </button>
 
         <!-- main nav -->
-        <nav class="collapse navbar-collapse text-center" role="navigation">
+        <nav class="collapse navbar-collapse text-center" role="navigation" id="navigation">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="<?=$view['urlbaseaddr'] ?>">Home</a></li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/releases">Download</a></li>
