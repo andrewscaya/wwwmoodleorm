@@ -33,15 +33,9 @@
         <div class="layer" id="l4">
             <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/dots-orange.png" alt="bg-shape">
         </div>
-        <!-- <div class="layer" id="l5">
-            <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/leaf-yellow.png" alt="bg-shape">
-        </div> -->
         <div class="layer" id="l7">
             <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/dots-group-orange.png" alt="bg-shape">
         </div>
-        <!-- <div class="layer" id="l9">
-            <img src="<?=$view['urlbaseaddr'] ?>images/illustrations/leaf-cyan-2.png" alt="bg-shape">
-        </div> -->
     </section>
     <!-- /hero area -->
 
@@ -84,7 +78,7 @@
                             <div class="wave" data-progress="100%"></div>
                         </div>
                         <div class="card-footer bg-white">
-                            <h4 class="card-title">Multiple vertical child tables 1-1 (100%)</h4>
+                            <h4 class="card-title">Cascading CRUD (100%)</h4>
                         </div>
                     </div>
                 </div>
@@ -94,7 +88,7 @@
                             <div class="wave" data-progress="100%"></div>
                         </div>
                         <div class="card-footer bg-white">
-                            <h4 class="card-title">Cascading CRUD (100%)</h4>
+                            <h4 class="card-title">Multiple vertical child tables 1-1 (100%)</h4>
                         </div>
                     </div>
                 </div>
@@ -117,7 +111,7 @@
     <section class="section pb-0">
         <div class="container">
             <div class="client-logo-slider d-flex align-items-center">
-                <a href="contact.html" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
+                <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
                                                                                       src="<?=$view['urlbaseaddr'] ?>images/clients-logo/client-logo-1.png" alt="client-logo"></a>
             </div>
         </div>

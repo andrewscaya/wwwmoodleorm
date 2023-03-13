@@ -5,7 +5,7 @@ Fixed Navigation
     <nav class="navbar navbar-expand-lg navbar-dark">
         <!-- logo -->
         <div class="h3 font-weight-bold">
-            <a class="navbar-title" href="<?=$view['urlbaseaddr'] ?>">MoodleORM</a>
+            <a class="navbar-title" href="<?=$view['urlbaseaddr'] ?>"><img src="<?=$view['urlbaseaddr'] ?>img/logo.png" style="max-width: 52px; margin-right: 15px; margin-bottom: 15px;" />MoodleORM</a>
         </div>
         <!-- /logo -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
