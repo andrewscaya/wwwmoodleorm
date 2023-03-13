@@ -18,8 +18,9 @@ Fixed Navigation
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/releases">Download</a></li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://moodleorm.readthedocs.io/en/latest/">Documentation</a></li>
-                <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/issues/">Support</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://moodle.org/plugins/local_moodleorm">Directory</a></li>
                 <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm">GitHub</a></li>
+                <li class="nav-item"><a class="nav-link" target="_blank" href="https://github.com/andrewscaya/moodle-local_moodleorm/issues/">Support</a></li>
             </ul>
         </nav>
         <!-- /main nav -->
