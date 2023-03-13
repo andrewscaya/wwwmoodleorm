@@ -11,7 +11,7 @@ $baseConfig['templates'] = [
 
 $baseConfig['view'] = [
     'urlbaseaddr' => $baseConfig['URLBASEADDR'],
-    'logo' => $baseConfig['URLBASEADDR'] . 'img/logo.png',
+    'logo' => $baseConfig['URLBASEADDR'] . 'img/logo.svg',
     'lightmvc_logo' => $baseConfig['URLBASEADDR'] . 'img/lightmvc_logo.png',
     'lightmvc_logo_large' => $baseConfig['URLBASEADDR'] . 'img/lightmvc_logo_large.png',
     'favicon' => $baseConfig['URLBASEADDR'] . 'favicon.ico',

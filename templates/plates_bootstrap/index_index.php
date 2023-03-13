@@ -110,10 +110,10 @@
     <!-- client logo slider -->
     <section class="section pb-0">
         <div class="container">
-            <div class="client-logo-slider d-flex align-items-center">
+            <!-- <div class="client-logo-slider d-flex align-items-center">
                 <a href="#" class="text-center d-block outline-0 p-4"><img class="d-unset img-fluid"
                                                                                       src="<?=$view['urlbaseaddr'] ?>images/clients-logo/client-logo-1.png" alt="client-logo"></a>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- /client logo slider -->
